@@ -1,38 +1,21 @@
-# cli-cmds
-comandos de cli's útiles
+# Referencias
+
+Comandos útiles para usar en la cli (command line interface) de `dotnet`.
 
 
-Crear nuevo proyecto mvc con netcore 3.1:
+## Crear proyectos
 
-```powershell
-dotnet new mvc -au None --framework netcoreapp3.1 --no-https
-```
-
-## dotnet-ef
-
-Para manejar las migrations y updates utilizando entity framework
-
-```powershell
-dotnet tool install -g dotnet-ef
-```
-
-## dotnet-aspnet-codegenerator
-
-Instalarlo en la máquina:
-
-```powershell
-dotnet tool install -g dotnet-aspnet-codegenerator
-```
+Desde la cli de `dotnet` podemos crear proyectos de los que soporta el framework. 
+Algunos de los comandos útiles [aquí](new-projects.md).
 
 
-Para hacer scaffolding de un controller mvc con actions y views usando entity framework:
+## Entity framework
 
-```powershell
-dotnet aspnet-codegenerator controller -m MODELO_CON_NAMESPACE -dc DB_CONTEXT_NAMESPACE -name NOMBRE_DEL_CONTROLADOR -outDir Controllers -async -scripts -udl -f
-```
+Podemos manejar la creación de migraciones así como el update de la base de datos desde la cli de `dotnet` haciendo uso de la herramienta `ef`.
+En el siguiente [link](entity-framework.md) hay algunos ejemplos y cuestiones a considerar en este punto.
 
-Ejemplo:
+## Uso de scaffolding
 
-```powershell
-dotnet aspnet-codegenerator controller -m mi_namespace.Models.Alumnos -dc mi_namespace.Database.InstitutoDbContext -name AlumnosController -outDir Controllers -async -scripts -udl -f
-```
+Otra de las funcionalidades útiles a las cuales podemos acceder desde la línea de comando de `dotnet` es la generación de los scaffoldings. 
+En [este](uso-scaffolding.md) caso en particular se muestra cómo utilizarlo para poder generar scaffolding de controladores con vistas utilizando entity framework en mvc.
+
