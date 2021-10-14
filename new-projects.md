@@ -1,6 +1,6 @@
 # Creación de proyectos
 
-Para crear nuevos proyectos desde la cli de `dotnet` lo primero que se debe hacer es posicionarse en la carpeta donde se quiere crear el proyecto. 
+Para crear nuevos proyectos desde la cli de `dotnet` lo primero que se debe hacer es posicionarse en la carpeta donde se quiere crear el proyecto.  
 Una vez posicionado donde corresponse utilizando una shell (powershell, bash, etc) procedemos a la creación del proyecto: 
 
 ## Nuevo proyecto MVC netcore 3.1
